@@ -1,0 +1,21 @@
+{
+  // Main Info
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Anitracker",
+
+  // Desc Info
+  "default_locale": "en",
+  "description": "This extension helps you track anime episodes and when they come out!",
+  
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
+
