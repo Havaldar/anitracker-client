@@ -5,13 +5,12 @@
   "name": "Anitracker",
 
   // Desc Info
-  "default_locale": "en",
   "description": "This extension helps you track anime episodes and when they come out!",
   
 
   "browser_action": {
     "default_icon": "images/icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "views/popup.html"
   },
   "permissions": [
     "activeTab",
