@@ -1,0 +1,11 @@
+<input type="text" class="form-control" placeholder="Search" ng-model="q" id="queryInput">
+<div class="list-group">
+  <a href="#" class="list-group-item" ng-repeat="anime in animes | filter: q as results">
+    <h4 class="list-group-item-heading">{{anime.name}}</h4>
+    <p class="list-group-item-text">{{anime.description}}</p>
+  </a>
+  <div ng-if="results.length === 0">  
+    No Anime Found <br>
+    <img src="/imgs/saitama.png" id="failImage">
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+    <title>AniTrackr</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+</head>
+<body>
+	<div class="container">
+	  	
+		<div class="nav" ng-include="'/views/partials/nav.html'"></div>
+
+	  	<div class="tab-content">
+	    	<div role="tabpanel" class="tab-pane" id="addAnime" ng-controller="listCtrl">
+	    		<form class="form">
+					<div>
+						<div class="col-md-6">
+						  	<div class="form-group">
+						    	<label>Name</label>
+						    	<input 	type="text" 
+						    			class="form-control" 
+						    			placeholder="Cowboy Bebop" 
+						    			ng-model="anime.name">
+						  	</div>
+						  	<div class="form-group">
+						    	<label>Link</label>
+						    	<input 	type="text" 
+						    			class="form-control" 
+						    			placeholder="http://kissanime.to/Anime/Cowboy-Bebop" 
+						    			ng-model="anime.link">
+						  	</div>
+					  	</div>
+					  	<div class="col-md-6">
+					  		
+					  	</div>
+				  	</div>
+				  	<button type="submit" class="btn btn-default">Send invitation</button>
+				</form>
+	    	</div>
+
+
+	    	<div role="tabpanel" class="tab-pane" id="account">
+	    		
+	    	</div>
+
+	    	<div 	role="tabpanel" 
+	    			class="tab-pane" 
+	    			id="animeList" 
+	    			ng-controller="listCtrl" 
+	    			ng-include="'/views/partials/list.html'">
+	    	</div>
+
+			<div 	role="tabpanel" 
+					class="tab-pane" 
+					id="settings" 
+					ng-controller='settingsCtrl' 
+					ng-include="'/views/partials/settings.html'">
+	    	</div>
+	  	</div>
+	</div>
+    <script type="text/javascript" src="/lib/jquery/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/listCtrl.js"></script>
+    <script type="text/javascript" src="/app/settingsCtrl.js"></script>
+</body>
+</html>

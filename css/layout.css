@@ -1,9 +1,10 @@
 html, body {
 	padding: 10px; 
 	padding-right: 30px;
-	width : 700px;
-	height : 500px;
+	width : 600px;
+	height : 350px;
 	font-weight: bold;
+	overflow: scroll;
 }
 a, a:active, a:link, a:hover, a:visited {
 	color: black;
@@ -15,12 +16,34 @@ body .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>
     color: #fff;
     background-color: #4C9F70;
 }
-
-
+#failImage {
+	height: 200px;
+	width: auto;
+}
 .nav-tabs, .nav-pills {
 	border-bottom: dashed #4C9F70 2px;
 	padding-bottom: 10px;
 }
 body .container .tab-content label {
 	font-weight: bold;
+}
+body .form-group {
+	float: left;
+	width: 50%;
+}
+body .btn {
+	width: 213%;
+	font-weight: bold;
+	background-color: #4C9F70;
+	color: white;
+	margin-top: 15px; 
+}
+body .nav {
+	margin-bottom: 10px;
+}
+body .list-group-item .active {
+	background-color: #4C9F70;
+}
+body #queryInput {
+	margin-bottom: 5px;
 }

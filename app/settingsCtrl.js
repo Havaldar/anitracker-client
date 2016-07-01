@@ -1,13 +1,9 @@
-angular.module('app').controller('accountCtrl', function($scope) {
+angular.module('app').controller('settingsCtrl', function($scope) {
 	$scope.user = {
 		username: '',
 		email: '',
 		phone: '',
 		newPassword: '',
 		confirmPPassword: ''
-	};
-
-	$scope.submit = function() {
-
 	};
 });
