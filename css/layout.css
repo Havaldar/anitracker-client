@@ -47,3 +47,6 @@ body .list-group-item .active {
 body #queryInput {
 	margin-bottom: 5px;
 }
+.fail {
+	text-align: center;
+}
