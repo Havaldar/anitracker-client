@@ -1,6 +1,6 @@
 <input type="text" class="form-control" placeholder="Search" ng-model="q" id="queryInput">
 <div class="list-group">
-  <a href="#" class="list-group-item" ng-repeat="anime in animes | filter: q as results">
+  <a href="#" class="list-group-item hvr-buzz-out" ng-repeat="anime in animes | filter: q as results">
     <h4 class="list-group-item-heading">{{anime.name}}</h4>
     <p class="list-group-item-text">{{anime.description}}</p>
   </a>
